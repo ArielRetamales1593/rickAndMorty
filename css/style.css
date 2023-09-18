@@ -4,74 +4,70 @@
   box-sizing: border-box;
 }
 @font-face {
-  font-family: 'morty';
-  src: url('../assets/fuentes/morty.ttf') format('truetype');
+  font-family: "morty";
+  src: url("../assets/fuentes/morty.ttf") format("truetype");
   font-style: normal;
   font-weight: normal;
 }
 @font-face {
-  font-family: 'bop';
-  src: url('../assets/fuentes/BlackOpsOne-Regular.ttf') format('truetype');
+  font-family: "bop";
+  src: url("../assets/fuentes/BlackOpsOne-Regular.ttf") format("truetype");
   font-style: normal;
   font-weight: normal;
 }
 
-nav{
+nav {
   background-image: url(../assets/bgImage);
 }
-.nav-link{
+.nav-link {
   font-family: morty;
-  color: #97FB9B !important;
+  color: #97fb9b !important;
   font-size: 3vw !important;
 }
-#formularioBusqueda{
+#formularioBusqueda {
   background-color: #0a243c;
 }
 ::placeholder {
   color: grey !important;
   font-size: 1em;
 }
-.cardPersonaje{
+.cardPersonaje {
   background-color: #3c3a4a !important;
   box-shadow: 5px 5px 25px 5px #6e6f7c !important;
   border-radius: 10px !important;
   width: 18rem !important;
 }
 
-.card-body{
-  font-family: 'Josefin Sans', sans-serif !important;
+.card-body {
+  font-family: "Josefin Sans", sans-serif !important;
 }
-.cardLink{
+.cardLink {
   text-align: center;
   outline: none;
   text-decoration: none;
   color: rgb(255, 152, 0);
 }
-.cardLink:hover{
-
-  
+.cardLink:hover {
   background: rgb(32, 35, 41);
 }
-.cardInfo_Status{
+.cardInfo_Status {
   border-radius: 10px !important;
   background-color: #0a243c67;
 }
-#main{
+#main {
   background-image: url(../assets/bgImage);
   min-height: 100vh;
 }
-.cardLocation{
-
+.cardLocation {
   z-index: 0;
   position: absolute;
-  background-size:cover;
+  background-size: cover;
   background-image: url("../assets/bg-location.jpg");
-  background-position: center
+  background-position: center;
 }
-.cardEpisode{
+.cardEpisode {
   background-color: #0a243c67 !important;
   box-shadow: 5px 5px 25px 5px #6e6f7c !important;
-
 }
 .scroll {
   max-height: 200px; /* Ajusta la altura máxima según tus necesidades */
@@ -85,48 +81,167 @@ nav{
   z-index: 0;
 }
 .scroll::-webkit-scrollbar {
-  width: 12px;               /* width of the entire scrollbar */
+  width: 12px; /* width of the entire scrollbar */
 }
 
 .scroll::-webkit-scrollbar-track {
-  background: #0a243c  ;        /* color of the tracking area */
-  border-radius: 20px;       /* roundness of the scroll thumb */
-  border: 1px solid black;  /* creates padding around scroll thumb */
-
+  background: #0a243c; /* color of the tracking area */
+  border-radius: 20px; /* roundness of the scroll thumb */
+  border: 1px solid black; /* creates padding around scroll thumb */
 }
 
 .scroll::-webkit-scrollbar-thumb {
-  background-color: #1a847c;    /* color of the scroll thumb */
-  border-radius: 20px;       /* roundness of the scroll thumb */
-  border: 1px solid grey;  /* creates padding around scroll thumb */
-
+  background-color: #1a847c; /* color of the scroll thumb */
+  border-radius: 20px; /* roundness of the scroll thumb */
+  border: 1px solid grey; /* creates padding around scroll thumb */
 }
-.puntosSusp{
+.puntosSusp {
   width: 30px;
   height: 100%;
   background-color: white;
 }
-.page-link{
+.page-link {
   border-radius: 30px !important;
 }
-.pagination{
-  font-family: morty;  
-  --bs-pagination-active-bg: #97FB9B !important;
+.pagination {
+  font-family: morty;
+  --bs-pagination-active-bg: #97fb9b !important;
   --bs-pagination-active-border-color: #3c3a4a !important;
-  --bs-pagination-active-color:#3c3a4a !important;
+  --bs-pagination-active-color: #3c3a4a !important;
   --bs-pagination-bg: #3c3a4a !important;
   --bs-pagination-border-color: #3c3a4a !important;
-  --bs-pagination-color:#97FB9B !important;
-  --bs-pagination-hover-bg: #3c3a4a!important;
-  --bs-pagination-focus-color:#97FB9B !important;
-  --bs-pagination-hover-color:#97FB9B !important;
+  --bs-pagination-color: #97fb9b !important;
+  --bs-pagination-hover-bg: #3c3a4a !important;
+  --bs-pagination-focus-color: #97fb9b !important;
+  --bs-pagination-hover-color: #97fb9b !important;
   grid-gap: 5px;
 }
-#compareGadget{
+#compareGadget {
   background-image: url(../assets/bgImage);
-
 }
-#compareGadget{
+#compareGadget {
   background-image: url(../assets/bgImage);
+}
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "morty";
+  src: url("../assets/fuentes/morty.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+.foto1 {
+  position: absolute;
+  width: 31.25rem;
+  left: 200px;
+  bottom: 0;
+  filter: drop-shadow(5px 5px 2px black);
+}
+
+.foto1:hover {
+  filter: drop-shadow(10px 10px 10px black);
+}
+
+.contenedorBanner {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  background-image: url(../assets/wallpaperflare.com_wallpaper.jpg);
+  background-size: cover;
+}
+.logo {
+  position: absolute;
+  width: 600px;
+}
+
+.logo:hover {
+  filter: drop-shadow(10px 10px 4px #d6e54f);
+}
+
+.boton {
+  width: 160px;
+  height: 40px;
+  background-color: none;
+  color: white;
+
+  font-size: 2em;
+
+  align-self: center;
+  margin-top: 20px;
+
+  transition: ease 0.2s;
+  font-family: "morty";
+}
+
+.boton2 {
+  width: 160px;
+  height: 40px;
+
+  font-family: "morty";
+  font-size: 2em;
+  border-radius: 15px;
+  align-self: center;
+  margin-top: 20px;
+  margin-left: 100px;
+  transition: ease 0.2s;
+  color: white;
+}
+
+.boton3 {
+  width: 160px;
+  height: 40px;
+
+  font-family: "morty";
+  font-size: 2em;
+  border-radius: 15px;
+  align-self: center;
+  margin-top: 20px;
+  color: white;
+
+  transition: ease 0.2s;
+}
+a {
+  text-decoration-line: none;
+}
+
+.boton:hover {
+  border-radius: 15px;
+  height: 50px;
+  filter: drop-shadow(2px 2px 10px #d6e54f);
+  font-size: 1.5em;
+}
+
+.boton2:hover {
+  font-size: 1.5em;
+  border-radius: 15px;
+  height: 50px;
+  filter: drop-shadow(2px 2px 10px #d6e54f);
+}
+.boton3:hover {
+  font-size: 1.5em;
+  border-radius: 15px;
+  height: 50px;
+  filter: drop-shadow(2px 2px 10px #d6e54f);
+}
+
+.navbar {
+  color: rgb(37, 150, 190);
+  background-color: hsla(0, 100%, 90%, 0.3);
+}
+
+.contBotones {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 35%;
+  left: 60%;
+  gap: 50px;
+  font-family: "morty";
 }
