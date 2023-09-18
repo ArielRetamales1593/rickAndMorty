@@ -245,3 +245,7 @@ a {
   gap: 50px;
   font-family: "morty";
 }
+
+.logo:hover {
+  filter: drop-shadow(10px 10px 4px #d6e54f) !important;
+}
