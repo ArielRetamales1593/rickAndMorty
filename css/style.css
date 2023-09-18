@@ -246,6 +246,11 @@ a {
   font-family: "morty";
 }
 
-.logo:hover {
-  filter: drop-shadow(10px 10px 4px #d6e54f) !important;
+.logo1:hover {
+  filter: drop-shadow(5px 5px 2px #d6e54f) !important;
+}
+
+.nav-item :hover {
+  font-size: 2rem !important;
+  text-shadow: 10px 10px 10px black !important;
 }
